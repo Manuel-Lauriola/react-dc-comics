@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="container">
+    <header className="container">
       <div className="row align-items-center p-10">
         <div className="col-50">
           <div id="logo">
@@ -24,7 +24,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 

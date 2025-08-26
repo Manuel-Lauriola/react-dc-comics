@@ -8,12 +8,21 @@ body {
   font-family: "open sans", "sans serif";
 }
 
+main {
+  background-color: #000;
+  color: white;
+}
+
 .container {
   max-width: 1200px;
 }
 
 .row {
   display: flex;
+}
+
+.col-100 {
+  width: 100%;
 }
 
 .col-50 {
@@ -23,6 +32,10 @@ body {
 /* UTILITIES */
 .align-items-center {
   align-items: center;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .p-10 {
@@ -54,3 +67,27 @@ body {
   text-decoration: none;
   font-size: 0.8rem;
 }
+
+/* FOOTER */
+
+#market {
+  background-color: #0c7cec;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0px;
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.buy img {
+  max-height: 50px;
+  max-width: 70px;
+  padding: 0px 10px;
+}
+
+
