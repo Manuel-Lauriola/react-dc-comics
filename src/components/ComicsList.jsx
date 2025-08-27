@@ -60,9 +60,9 @@ const ComicsList = () => {
   },
   {
     id: 5,
-    title: "Batman #56",
+    title: "Justice league #69",
     description: "The Dark Knight's looking to drop both the hammer and sickle on the KGBeast. The Russian super-assassin has gone too far, and Batman will stop at nothing to hunt him down. But is the Dark Knight willing to step into the darkness himself to find justice?",
-    thumb: "https://imgs.search.brave.com/3vP5d3cOVOuC0f6Uhm7CkV_qFk5hGj5rE4jK5I6n7dI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4y/LnBlbmd1aW4uY29t/LmF1L2NvdmVycy9v/cmlnaW5hbC83OTYx/OTQzMTM5OTk4Lmpw/Zw",
+    thumb: "https://m.media-amazon.com/images/I/71aCHLA1geL._UF1000,1000_QL80_.jpg",
     price: "$3.99",
     series: "Batman",
     sale_date: "2018-10-03",
@@ -159,12 +159,16 @@ const ComicsList = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-16">
+        {comics.map((comic) => (
+          <div className="col-16">
           <div className="card">
-            <img src="https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY" alt="superman" />
-          <h5>Action Comic</h5>
+            <img 
+            src={comic.thumb}
+            alt={comic.title} />
+          <h5>{comic.title}</h5>
           </div>
         </div>
+        ))}
       </div>
     </div>
   )
