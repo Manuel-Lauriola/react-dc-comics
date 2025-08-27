@@ -1,9 +1,9 @@
-import React from 'react'
+import ComicsList from './ComicsList'
 
 const Main = () => {
   return (
     <main>
-      <h1>content goes here</h1>
+      <ComicsList />
     </main>
   )
 }

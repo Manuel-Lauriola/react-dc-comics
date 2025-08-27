@@ -33,6 +33,10 @@ main {
   width: 20%;
 }
 
+.col-16 {
+  width: calc(100% / 6);
+}
+
 /* UTILITIES */
 .align-items-center {
   align-items: center;
@@ -54,10 +58,6 @@ main {
   justify-content: flex-end;
 }
 
-/* #logo {
-  margin-left: 100px;
-} */
-
 #logo img {
   height: 60px;
 }
@@ -70,6 +70,18 @@ main {
   color: #000;
   text-decoration: none;
   font-size: 0.8rem;
+}
+
+/* MAIN */
+
+.card {
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
 /* FOOTER */
