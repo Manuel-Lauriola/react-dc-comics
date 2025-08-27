@@ -118,7 +118,38 @@ main {
 }
 
 .logo-bg {
-  background-image: url(../public/img/dc-logo-bg.png);
+  background-image: url(/img/dc-logo-bg.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* bottom */
+
+#bottom-footer {
+  background-color: #000;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.sign-up button {
+  border: #0c7cec 2px solid;
+  background-color: #000;
+  color: white;
+  padding: 5px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.socials span {
+  color: #0c7cec;
+  align-self: center;
 }
